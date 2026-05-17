@@ -2,7 +2,7 @@ export const translations = {
   ky: {
     hero: {
       title: "Акыркы эсте каларлык күндөрдүн бири",
-      subtitle: "3-курс студенттери 4-курс үчүн жылуу узатуу кечесин уюштурат. Чогулуу убактысы: 13:00",
+      subtitle: "3-курс студенттери 4-курс үчүн жылуу узатуу кечесин уюштурат. Чогулуу убактысы: 24-май, 13:00",
       badge: "Узатуу кечеси",
       joinBtn: "Катышуу",
       programBtn: "Программа"
@@ -85,7 +85,7 @@ export const translations = {
   tr: {
     hero: {
       title: "Unutulmaz Son Günlerden Biri",
-      subtitle: "3. sınıf öğrencileri, 4. sınıf öğrencileri için özel bir veda partisi düzenliyor. Toplanma saati: 13:00",
+      subtitle: "3. sınıf öğrencileri, 4. sınıf öğrencileri için özel bir veda partisi düzenliyor. Toplanma saati: 24 Mayıs, 13:00",
       badge: "Veda Partisi",
       joinBtn: "Katıl",
       programBtn: "Program"
