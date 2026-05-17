@@ -61,7 +61,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           <span className="inline-block py-1 px-3 mb-6 bg-amber-500/20 backdrop-blur-md border border-amber-500/30 rounded-full text-amber-200 text-sm font-medium tracking-wide uppercase">
-            Farewell Picnic
+            {t.hero.badge || 'Узатуу кечеси'}
           </span>
         </motion.div>
 

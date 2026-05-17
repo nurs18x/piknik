@@ -1,13 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../i18n/LanguageContext';
-import { Gamepad2, Trophy, Gift, Camera, Music, Utensils, MessagesSquare, MountainSnow, Wind, Heart } from 'lucide-react';
+import { Trophy, Gift, Camera, Music, Utensils, MessagesSquare, MountainSnow, Heart } from 'lucide-react';
 
 export default function WhatAwaits() {
   const { t } = useLanguage();
 
   const cards = [
-    { icon: Gamepad2, text: t.whatAwaits.games, color: 'text-amber-400', border: 'border-amber-400/20' },
     { icon: Trophy, text: t.whatAwaits.sports, color: 'text-amber-500', border: 'border-amber-500/20' },
     { icon: Gift, text: t.whatAwaits.gifts, color: 'text-amber-300', border: 'border-amber-300/20' },
     { icon: Camera, text: t.whatAwaits.photo, color: 'text-yellow-400', border: 'border-yellow-400/20' },
@@ -15,7 +14,6 @@ export default function WhatAwaits() {
     { icon: Utensils, text: t.whatAwaits.food, color: 'text-amber-500', border: 'border-amber-500/20' },
     { icon: MessagesSquare, text: t.whatAwaits.chat, color: 'text-orange-400', border: 'border-orange-400/20' },
     { icon: MountainSnow, text: t.whatAwaits.views, color: 'text-amber-200', border: 'border-amber-200/20' },
-    { icon: Wind, text: t.whatAwaits.air, color: 'text-yellow-200', border: 'border-yellow-200/20' },
     { icon: Heart, text: t.whatAwaits.memories, color: 'text-amber-500', border: 'border-amber-500/20' },
   ];
 
@@ -31,7 +29,7 @@ export default function WhatAwaits() {
           {t.whatAwaits.title}
         </motion.h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {cards.map((card, idx) => (
             <motion.div
               key={idx}

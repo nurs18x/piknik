@@ -2,20 +2,21 @@ export const translations = {
   ky: {
     hero: {
       title: "Акыркы эсте каларлык күндөрдүн бири",
-      subtitle: "3-курс студенттери 4-курс үчүн жылуу farewell picnic уюштурат.",
+      subtitle: "3-курс студенттери 4-курс үчүн жылуу узатуу кечесин уюштурат. Чогулуу убактысы: 13:00",
+      badge: "Узатуу кечеси",
       joinBtn: "Катышуу",
       programBtn: "Программа"
     },
     about: {
       title: "Биз жөнүндө",
-      text1: "Бул жөн гана пикник эмес —",
-      text2: "бул студенттик жылдардын эң жылуу эскерүүлөрүнүн бири.",
+      text1: "Жылдар өткөндөн кийин дагы",
+      text2: "ушул күндүн күлкүсү, сүрөттөрү жана эскерүүлөрү жүрөктө калат.",
       text3: "Биз, 3-курс студенттери, 4-курс үчүн жагымдуу жана унутулгус күн уюштурууну каалайбыз."
     },
     whatAwaits: {
       title: "Бизди эмне күтөт?",
       games: "Кызыктуу оюндар",
-      sports: "Спорттук мелдештер",
+      sports: "Көңүл ачуучу оюндар",
       gifts: "Белектер жана сюрприздер",
       photo: "Фотосессия",
       music: "Музыка",
@@ -33,7 +34,7 @@ export const translations = {
       t1000: "Эртең мененки тамак",
       t1100: "Тыныгуу",
       t1130: "Кызыктуу оюндар",
-      t1200: "Спорттук оюндар",
+      t1200: "Көңүл ачуучу оюндар",
       t1300: "Топ оюндары",
       t1400: "Ырдоо жана бийлөө",
       t1530: "Эркин программа",
@@ -84,14 +85,15 @@ export const translations = {
   tr: {
     hero: {
       title: "Unutulmaz Son Günlerden Biri",
-      subtitle: "3. sınıf öğrencileri, 4. sınıf öğrencileri için özel bir veda pikniği düzenliyor.",
+      subtitle: "3. sınıf öğrencileri, 4. sınıf öğrencileri için özel bir veda partisi düzenliyor. Toplanma saati: 13:00",
+      badge: "Veda Partisi",
       joinBtn: "Katıl",
       programBtn: "Program"
     },
     about: {
       title: "Hakkımızda",
-      text1: "Bu sadece bir piknik değil —",
-      text2: "öğrencilik yıllarının en sıcak anılarından biri.",
+      text1: "Yıllar geçse bile",
+      text2: "bu günün gülümsemeleri, fotoğrafları ve anıları kalplerde kalacak.",
       text3: "Biz, 3. sınıf öğrencileri olarak, 4. sınıf öğrencileri için unutulmaz bir gün hazırlıyoruz."
     },
     whatAwaits: {
