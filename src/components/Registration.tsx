@@ -12,7 +12,6 @@ export default function Registration() {
     surname: '',
     role: '',
     phone: '',
-    telegram: '',
     attending: 'yes'
   });
   const [loading, setLoading] = useState(false);
@@ -30,7 +29,6 @@ export default function Registration() {
         surname: '',
         role: '',
         phone: '',
-        telegram: '',
         attending: 'yes'
       });
     } catch (error) {
@@ -49,16 +47,16 @@ export default function Registration() {
   };
 
   return (
-    <section id="register" className="py-24 bg-white relative">
+    <section id="register" className="py-24 bg-zinc-950 relative">
       <div className="max-w-3xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-slate-50 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-slate-100"
+          className="bg-zinc-900 rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-amber-500/20"
         >
           <div className="text-center mb-10">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-slate-900 mb-4">
+            <h2 className="font-heading text-3xl md:text-5xl font-bold text-zinc-100 mb-4">
               {t.registration.title}
             </h2>
           </div>
@@ -66,38 +64,38 @@ export default function Registration() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700">{t.registration.name} *</label>
+                <label className="text-sm font-medium text-zinc-400">{t.registration.name} *</label>
                 <input 
                   required
                   type="text" 
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-zinc-800 bg-zinc-950 text-white focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all placeholder:text-zinc-600"
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700">{t.registration.surname} *</label>
+                <label className="text-sm font-medium text-zinc-400">{t.registration.surname} *</label>
                 <input 
                   required
                   type="text" 
                   name="surname"
                   value={formData.surname}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-zinc-800 bg-zinc-950 text-white focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all placeholder:text-zinc-600"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 gap-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700">{t.registration.role} *</label>
+                <label className="text-sm font-medium text-zinc-400">{t.registration.role} *</label>
                 <select 
                   required
                   name="role"
                   value={formData.role}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all appearance-none"
+                  className="w-full px-4 py-3 rounded-xl border border-zinc-800 bg-zinc-950 text-white focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all appearance-none"
                 >
                   <option value="">{t.registration.selectRole}</option>
                   <option value="1-курс">{t.registration.roles.y1}</option>
@@ -109,42 +107,31 @@ export default function Registration() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700">{t.registration.phone} *</label>
+                <label className="text-sm font-medium text-zinc-400">{t.registration.phone} *</label>
                 <input 
                   required
                   type="tel" 
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all"
-                />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700">{t.registration.telegram}</label>
-                <input 
-                  type="text" 
-                  name="telegram"
-                  value={formData.telegram}
-                  onChange={handleChange}
-                  placeholder="@username"
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-zinc-800 bg-zinc-950 text-white focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all placeholder:text-zinc-600"
                 />
               </div>
             </div>
 
             <div className="space-y-3 pt-2">
-              <label className="text-sm font-medium text-slate-700">{t.registration.attendingLabel} *</label>
+              <label className="text-sm font-medium text-zinc-400">{t.registration.attendingLabel} *</label>
               <div className="flex gap-4">
                 <label className="flex-1">
-                  <div className={`cursor-pointer px-4 py-3 rounded-xl border flex items-center justify-center gap-2 transition-all ${formData.attending === 'yes' ? 'bg-sky-50 border-sky-500 text-sky-700' : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'}`}>
+                  <div className={`cursor-pointer px-4 py-3 rounded-xl border flex items-center justify-center gap-2 transition-all ${formData.attending === 'yes' ? 'bg-amber-500/10 border-amber-500 text-amber-500' : 'bg-zinc-950 border-zinc-800 text-zinc-500 hover:bg-zinc-900'}`}>
                     <input type="radio" name="attending" value="yes" className="hidden" onChange={handleChange} checked={formData.attending === 'yes'} />
                     {t.registration.yes}
                   </div>
                 </label>
                 <label className="flex-1">
-                  <div className={`cursor-pointer px-4 py-3 rounded-xl border flex items-center justify-center gap-2 transition-all ${formData.attending === 'no' ? 'bg-sky-50 border-sky-500 text-sky-700' : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'}`}>
+                  <div className={`cursor-pointer px-4 py-3 rounded-xl border flex items-center justify-center gap-2 transition-all ${formData.attending === 'no' ? 'bg-amber-500/10 border-amber-500 text-amber-500' : 'bg-zinc-950 border-zinc-800 text-zinc-500 hover:bg-zinc-900'}`}>
                     <input type="radio" name="attending" value="no" className="hidden" onChange={handleChange} checked={formData.attending === 'no'} />
                     {t.registration.no}
                   </div>
@@ -155,7 +142,7 @@ export default function Registration() {
             <button 
               type="submit" 
               disabled={loading}
-              className="w-full mt-8 py-4 bg-slate-900 text-white rounded-xl font-medium hover:bg-slate-800 transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="w-full mt-8 py-4 bg-amber-500 text-zinc-950 rounded-xl font-medium hover:bg-amber-400 transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed shadow-[0_0_20px_rgba(245,158,11,0.2)]"
             >
               {loading ? <Loader2 className="animate-spin" size={20} /> : null}
               {t.registration.submit}
@@ -172,23 +159,23 @@ export default function Registration() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
+              className="absolute inset-0 bg-zinc-950/80 backdrop-blur-md"
               onClick={() => setSuccess(false)}
             />
             <motion.div 
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative bg-white rounded-[2rem] p-8 md:p-12 text-center shadow-2xl max-w-sm w-full"
+              className="relative bg-zinc-900 border border-amber-500/20 rounded-[2rem] p-8 md:p-12 text-center shadow-[0_0_30px_rgba(245,158,11,0.15)] max-w-sm w-full"
             >
-              <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 text-emerald-500">
+              <div className="w-20 h-20 bg-amber-500/10 border border-amber-500/30 rounded-full flex items-center justify-center mx-auto mb-6 text-amber-500">
                 <CheckCircle2 size={40} />
               </div>
-              <h3 className="font-heading text-2xl font-bold text-slate-900 mb-2">{t.registration.successTitle}</h3>
-              <p className="text-slate-600 mb-8">{t.registration.successMessage}</p>
+              <h3 className="font-heading text-2xl font-bold text-zinc-100 mb-2">{t.registration.successTitle}</h3>
+              <p className="text-zinc-400 mb-8">{t.registration.successMessage}</p>
               <button 
                 onClick={() => setSuccess(false)}
-                className="w-full py-3 bg-slate-100 text-slate-900 rounded-xl font-medium hover:bg-slate-200 transition-colors"
+                className="w-full py-3 bg-amber-500 text-zinc-950 rounded-xl font-medium hover:bg-amber-400 transition-colors"
               >
                 {t.registration.close}
               </button>

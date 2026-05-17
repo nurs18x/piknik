@@ -12,7 +12,7 @@ async function startServer() {
 
   // API Route for registration
   app.post('/api/register', async (req, res) => {
-    const { name, surname, role, phone, telegram, attending } = req.body;
+    const { name, surname, role, phone, attending } = req.body;
     
     // Validate inputs
     if (!name || !surname || !role || !attending) {
@@ -35,7 +35,6 @@ async function startServer() {
 Фамилиясы: ${surname}
 Курс/Мугалим: ${role}
 Телефон: ${phone || '-'}
-Telegram: ${telegram || '-'}
 Катышабы: ${attending === 'yes' ? 'Ооба/Evet' : 'Жок/Hayır'}`;
 
     try {

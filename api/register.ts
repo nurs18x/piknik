@@ -14,7 +14,7 @@ export default async function handler(req: any, res: any) {
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });
   }
 
-  const { name, surname, role, phone, telegram, attending } = req.body;
+  const { name, surname, role, phone, attending } = req.body;
 
   if (!name || !surname || !role || !attending) {
     return res.status(400).json({ success: false, message: 'Missing required fields' });
@@ -34,7 +34,6 @@ export default async function handler(req: any, res: any) {
 Фамилиясы: ${surname}
 Курс/Мугалим: ${role}
 Телефон: ${phone || '-'}
-Telegram: ${telegram || '-'}
 Катышабы: ${attending === 'yes' ? 'Ооба/Evet' : 'Жок/Hayır'}`;
 
   try {

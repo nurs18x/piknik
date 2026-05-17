@@ -4,25 +4,21 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
 import WhatAwaits from './components/WhatAwaits';
-import Timeline from './components/Timeline';
 import Location from './components/Location';
 import Registration from './components/Registration';
-import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 export default function App() {
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-sky-200 selection:text-sky-900">
+      <div className="min-h-screen bg-zinc-950 text-zinc-300 font-sans selection:bg-amber-500/30 selection:text-amber-200">
         <Navigation />
         <main>
           <Hero />
           <About />
           <WhatAwaits />
-          <Timeline />
           <Location />
           <Registration />
-          <Gallery />
         </main>
         <Footer />
       </div>

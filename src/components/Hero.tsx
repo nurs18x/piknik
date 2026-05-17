@@ -42,16 +42,16 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-mountain-900">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-zinc-950">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2850&q=80" 
-          alt="Mountains" 
+          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2850&q=80" 
+          alt="Villa" 
           className="w-full h-full object-cover scale-105 transform transition-transform duration-[20s] hover:scale-100"
         />
         {/* Soft daylight gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/30 via-transparent to-slate-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/40 via-zinc-900/40 to-zinc-950/90" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20">
@@ -60,7 +60,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <span className="inline-block py-1 px-3 mb-6 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-white/90 text-sm font-medium tracking-wide uppercase">
+          <span className="inline-block py-1 px-3 mb-6 bg-amber-500/20 backdrop-blur-md border border-amber-500/30 rounded-full text-amber-200 text-sm font-medium tracking-wide uppercase">
             Farewell Picnic
           </span>
         </motion.div>
@@ -97,10 +97,10 @@ export default function Hero() {
             { label: 'Secs', value: timeLeft.seconds }
           ].map((item, idx) => (
             <div key={idx} className="flex flex-col items-center">
-              <div className="w-16 h-16 md:w-24 md:h-24 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 flex items-center justify-center mb-2 shadow-xl">
-                <span className="font-heading text-2xl md:text-4xl font-semibold">{item.value}</span>
+              <div className="w-16 h-16 md:w-24 md:h-24 bg-zinc-900/60 backdrop-blur-md rounded-2xl border border-amber-500/30 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+                <span className="font-heading text-2xl md:text-4xl font-semibold text-amber-400">{item.value}</span>
               </div>
-              <span className="text-xs md:text-sm text-white/70 uppercase tracking-wider">{item.label}</span>
+              <span className="text-xs md:text-sm text-zinc-400 uppercase tracking-wider">{item.label}</span>
             </div>
           ))}
         </motion.div>
@@ -114,25 +114,19 @@ export default function Hero() {
         >
           <button 
             onClick={() => scrollToSection('register')}
-            className="px-8 py-4 bg-white text-slate-900 rounded-full font-medium hover:bg-slate-100 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+            className="px-8 py-4 bg-amber-500 text-zinc-950 rounded-full font-medium hover:bg-amber-400 transition-colors shadow-[0_0_20px_rgba(245,158,11,0.4)]"
           >
             {t.hero.joinBtn}
-          </button>
-          <button 
-            onClick={() => scrollToSection('program')}
-            className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/30 rounded-full font-medium hover:bg-white/20 transition-colors"
-          >
-            {t.hero.programBtn}
           </button>
         </motion.div>
       </div>
 
-      {/* Floating particles aesthetic */}
+      {/* Floating particles aesthetic (Gold/Amber dust) */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        {[...Array(15)].map((_, i) => (
+        {[...Array(25)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-white/20"
+            className="absolute rounded-full bg-amber-400/30 blur-[1px]"
             style={{
               width: Math.random() * 8 + 4 + 'px',
               height: Math.random() * 8 + 4 + 'px',

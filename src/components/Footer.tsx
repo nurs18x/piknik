@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="py-12 bg-slate-900 text-center relative overflow-hidden">
+    <footer className="py-12 bg-zinc-950 border-t border-zinc-900 text-center relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <p className="text-xl md:text-2xl text-white/90 font-light italic mb-8 drop-shadow-sm font-heading">
           "{t.footer.quote}"

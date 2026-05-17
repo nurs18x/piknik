@@ -10,7 +10,7 @@ export const translations = {
       title: "Биз жөнүндө",
       text1: "Бул жөн гана пикник эмес —",
       text2: "бул студенттик жылдардын эң жылуу эскерүүлөрүнүн бири.",
-      text3: "Биз, 3-курс студенттери, 4-курс үчүн тоо арасында жагымдуу жана унутулгус күн уюштурууну каалайбыз."
+      text3: "Биз, 3-курс студенттери, 4-курс үчүн жагымдуу жана унутулгус күн уюштурууну каалайбыз."
     },
     whatAwaits: {
       title: "Бизди эмне күтөт?",
@@ -21,8 +21,8 @@ export const translations = {
       music: "Музыка",
       food: "Даамдуу тамактар",
       chat: "Жагымдуу баарлашуу",
-      views: "Кооз тоо көрүнүштөрү",
-      air: "Таза аба",
+      views: "Жайлуу атмосфера",
+      air: "Көңүлдүү эс алуу",
       memories: "Эсте каларлык көз ирмемдер"
     },
     timeline: {
@@ -44,7 +44,7 @@ export const translations = {
     },
     location: {
       title: "Өтүү жери",
-      text: "Пикнигибиз кооз жаратылышы жана таза абасы менен белгилүү Кашка-Суу аймагында өтөт.",
+      text: "Кечебиз шаардын ичинде жайгашкан, бардык шарттары бар чоң жеке үйдө (Стадионная 59) өтөт.",
       openMap: "Картаны ачуу"
     },
     registration: {
@@ -62,7 +62,6 @@ export const translations = {
       },
       group: "Тайпасы",
       phone: "Телефон номери",
-      telegram: "Telegram username (милдеттүү эмес)",
       attendingLabel: "Катышасызбы?",
       yes: "Ооба",
       no: "Жок",
@@ -93,7 +92,7 @@ export const translations = {
       title: "Hakkımızda",
       text1: "Bu sadece bir piknik değil —",
       text2: "öğrencilik yıllarının en sıcak anılarından biri.",
-      text3: "Biz, 3. sınıf öğrencileri olarak, 4. sınıf öğrencileri için unutulmaz bir dağ pikniği hazırlıyoruz."
+      text3: "Biz, 3. sınıf öğrencileri olarak, 4. sınıf öğrencileri için unutulmaz bir gün hazırlıyoruz."
     },
     whatAwaits: {
       title: "Bizi Neler Bekliyor?",
@@ -104,8 +103,8 @@ export const translations = {
       music: "Müzik",
       food: "Lezzetli yemekler",
       chat: "Güzel sohbetler",
-      views: "Muhteşem dağ manzaraları",
-      air: "Temiz hava",
+      views: "Rahat atmosfer",
+      air: "Eğlenceli dinlenme",
       memories: "Unutulmaz anılar"
     },
     timeline: {
@@ -127,7 +126,7 @@ export const translations = {
     },
     location: {
       title: "Etkinlik Yeri",
-      text: "Pikniğimiz, doğası ve temiz havasıyla ünlü Kaşka-Suu bölgesinde gerçekleştirilecektir.",
+      text: "Etkinliğimiz şehrin içinde yer alan şık ve konforlu özel bir villada (Stadionnaya 59) gerçekleştirilecektir.",
       openMap: "Haritada Aç"
     },
     registration: {
@@ -145,7 +144,6 @@ export const translations = {
       },
       group: "Grup",
       phone: "Telefon numarası",
-      telegram: "Telegram username (isteğe bağlı)",
       attendingLabel: "Katılıyor musunuz?",
       yes: "Evet",
       no: "Hayır",
